@@ -284,11 +284,254 @@ Challenge:
 
 // })
 
+// const decrement = document.getElementById('decrement')
+// const increment = document.getElementById('increment')
+// const quantityDisplay = document.getElementById('quantity-display')
+// const cartBtn = document.getElementById('cartBtn')
+
+// let quantity = 0
+
+// decrement.addEventListener('click', function(){
+//     quantity--
+//     if (quantity === 0){
+//         decrement.disabled = true
+//     }     
+//     quantityDisplay.innerText = quantity
+// })
+
+// increment.addEventListener('click', function(){
+//     quantity ++
+//     decrement.disabled = false
+//     cartBtn.disabled = false
+//     quantityDisplay.innerText = quantity
+// })
+ 
+// cartBtn.addEventListener('click', function(){
+//     console.log(`Your order for ${quantity} pairs of shoes is being processed`)
+// /*
+// Challenge:
+// 1. Disable the 'Add to Cart' button when 
+//    quantity is at zero. Remember: quantity
+//    will be at zero when the page loads!
+// */ 
+//     You interact with the HTML first by disabling the button
+//     Then you go to the increment section and set
+//     cartBtn.disabled to "false"
+//     Then you go to the decrement section and 
+//     set cartBtn.disabled = true in the "if" statement
+//
+// })
+
+
+// const modal = document.getElementById('modal')
+// const modalCloseBtn = document.getElementById('modal-close-btn')
+// const consentForm = document.getElementById('consent-form')
+// const modalText = document.getElementById('modal-text')
+
+// setTimeout(function(){
+//     // console.log('Modal Opened!')
+//     modal.style.display = 'inline'
+// }, 1500)
+
+// modalCloseBtn.addEventListener('click', function(){
+//     modal.style.display = 'none'
+// })
+
+// consentForm.addEventListener('submit', function(e){
+//     e.preventDefault()
+
+//     const consentFormData = new FormData(consentForm)
+
+//     /*   
+// Challenge: 
+// 1. Create a const to store the user's name and
+//    use a FormData method to extract the 
+//    submitted name from the FormData object.
+// 2. Insert the user's name into the HTML string
+//    that contains the final message we show our
+//    users.
+
+//    To do this second part of the challenge,
+//    I used this syntax: ${variableName}
+// */ 
+
+//     const fullName = consentFormData.get('fullName')
+
+//     modalText.innerHTML = `
+//     <div class="modal-inner-loading">
+//         <img src="images/loading.svg" class="loading">
+//         <p id="upload-text">Uploading your data to the dark web...</p>
+//     </div>`
+
+//     setTimeout(function(){
+//         document.getElementById('upload-text').innerText = `
+//         Making the sale...`
+//     }, 1500)
+    
+    
+//     setTimeout(function(){
+//         document.getElementById('modal-inner').innerHTML = `
+//             <h2>Thanks <span class="modal-display-name">${fullName}</span>, you sucker!</h2>
+//             <p>We just sold the rights to your eternal soul.</p>
+//             <div class="idiot-gif">
+//                 <img src="images/pirate.gif">
+//             </div>`
+//     }, 3000)
+
+// })
+
+
+// const modal = document.getElementById('modal')
+// const modalCloseBtn = document.getElementById('modal-close-btn')
+// const consentForm = document.getElementById('consent-form')
+// const modalText = document.getElementById('modal-text')
+
+// setTimeout(function(){
+//     // console.log('Modal Opened!')
+//     modal.style.display = 'inline'
+// }, 1500)
+
+// modalCloseBtn.addEventListener('click', function(){
+//     modal.style.display = 'none'
+// })
+
+// consentForm.addEventListener('submit', function(e){
+//     e.preventDefault()
+
+//     const consentFormData = new FormData(consentForm)
+
+//     const fullName = consentFormData.get('fullName')
+
+//     modalText.innerHTML = `
+//     <div class="modal-inner-loading">
+//         <img src="images/loading.svg" class="loading">
+//         <p id="upload-text">Uploading your data to the dark web...</p>
+//     </div>`
+
+//     setTimeout(function(){
+//         document.getElementById('upload-text').innerText = `
+//         Making the sale...`
+//     }, 1500)
+    
+//    /*   
+// Challenge: 
+// 1. Make the button that closes the modal disabled.
+// 2. Make that button become usable when the final 
+//    modal message has been displayed to the user.
+// */  
+
+
+//     setTimeout(function(){
+//         document.getElementById('modal-inner').innerHTML = `
+//             <h2>Thanks <span class="modal-display-name">${fullName}</span>, you sucker!</h2>
+//             <p>We just sold the rights to your eternal soul.</p>
+//             <div class="idiot-gif">
+//                 <img src="images/pirate.gif">
+//             </div>`
+    
+//     /*2. Make that button become usable when the final 
+//             modal message has been displayed to the user.
+//     */ 
+//     modalCloseBtn.disabled = false
+//     }, 3000)
+
+// })
+
+
+
+
+// const modal = document.getElementById('modal')
+// const modalCloseBtn = document.getElementById('modal-close-btn')
+// const consentForm = document.getElementById('consent-form')
+// const modalText = document.getElementById('modal-text')
+// const declineBtn = document.getElementById('decline-btn')
+
+// setTimeout(function(){
+//     // console.log('Modal Opened!')
+//     modal.style.display = 'inline'
+// }, 1500)
+
+// modalCloseBtn.addEventListener('click', function(){
+//     modal.style.display = 'none'
+// })
+
+// /*   
+// Challenge: 
+// 1. Take control of the decline btn. (What do you
+//    need to do to make that possible?)
+// 2. Set up an eventListener that is triggered 
+//    when a user's cursor hovers over the decline 
+//    button. (Google the event to listen out for!)
+// 3. For now, just log out "hovered" when that 
+//    happens. 
+// */ 
+
+// declineBtn.addEventListener('mouseenter', function(){
+//     console.log('hovered')
+// })
+
+// consentForm.addEventListener('submit', function(e){
+//     e.preventDefault()
+
+//     const consentFormData = new FormData(consentForm)
+
+//     const fullName = consentFormData.get('fullName')
+
+//     modalText.innerHTML = `
+//     <div class="modal-inner-loading">
+//         <img src="images/loading.svg" class="loading">
+//         <p id="upload-text">Uploading your data to the dark web...</p>
+//     </div>`
+
+//     setTimeout(function(){
+//         document.getElementById('upload-text').innerText = `
+//         Making the sale...`
+//     }, 1500)
+
+
+//     setTimeout(function(){
+//         document.getElementById('modal-inner').innerHTML = `
+//             <h2>Thanks <span class="modal-display-name">${fullName}</span>, you sucker!</h2>
+//             <p>We just sold the rights to your eternal soul.</p>
+//             <div class="idiot-gif">
+//                 <img src="images/pirate.gif">
+//             </div>`
+
+//             modalCloseBtn.disabled = false
+//         }, 3000)
+    
+// })
+
+// const sortBtn = document.getElementById('sort-btn')
+// const container = document.getElementById('container')
+                  
+// sortBtn.addEventListener('click', function(){
+//     container.classList.toggle('reverse')
+// })
+
+// const sortBtn = document.getElementById('sort-btn')
+// const container = document.getElementById('container')
+            
+// sortBtn.addEventListener('click', function(){
+//     container.classList.toggle('reverse')
+// /*
+// Challenge:
+// 1. Make the Sort by Price button 
+//    reverse the order of the paintings.
+// */
+
+// })
+
+
+
+
 
 const modal = document.getElementById('modal')
 const modalCloseBtn = document.getElementById('modal-close-btn')
 const consentForm = document.getElementById('consent-form')
 const modalText = document.getElementById('modal-text')
+const declineBtn = document.getElementById('decline-btn')
+const modalChoiceBtn = document.getElementById('modal-choice-btns')
 
 setTimeout(function(){
     // console.log('Modal Opened!')
@@ -299,23 +542,24 @@ modalCloseBtn.addEventListener('click', function(){
     modal.style.display = 'none'
 })
 
+declineBtn.addEventListener('mouseenter', function(){
+    modalChoiceBtn.classList.toggle('modal-choice-btns-reverse')
+})
+
+/*   
+Challenge: 
+1. Take control of the div holding the buttons.
+2. In index.css, set up a selector for a new class
+   that uses flex-direction to reverse the order 
+   of its child elements.
+3. Toggle that class on the div holding the buttons 
+   when a user's cursor hovers over the decline button.
+*/ 
+
 consentForm.addEventListener('submit', function(e){
     e.preventDefault()
 
     const consentFormData = new FormData(consentForm)
-
-    /*   
-Challenge: 
-1. Create a const to store the user's name and
-   use a FormData method to extract the 
-   submitted name from the FormData object.
-2. Insert the user's name into the HTML string
-   that contains the final message we show our
-   users.
-
-   To do this second part of the challenge,
-   I used this syntax: ${variableName}
-*/ 
 
     const fullName = consentFormData.get('fullName')
 
@@ -329,8 +573,8 @@ Challenge:
         document.getElementById('upload-text').innerText = `
         Making the sale...`
     }, 1500)
-    
-    
+
+
     setTimeout(function(){
         document.getElementById('modal-inner').innerHTML = `
             <h2>Thanks <span class="modal-display-name">${fullName}</span>, you sucker!</h2>
@@ -338,6 +582,8 @@ Challenge:
             <div class="idiot-gif">
                 <img src="images/pirate.gif">
             </div>`
-    }, 3000)
 
+            modalCloseBtn.disabled = false
+        }, 3000)
+    
 })
